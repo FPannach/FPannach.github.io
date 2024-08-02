@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -227,3 +227,47 @@ footer {
     text-decoration: underline;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        width: 90%;
+        padding: 10px;
+    }
+    .header-content h1 {
+        font-size: 2em; /* Adjust font size for medium screens */
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .address-block {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        width: 100%;
+        padding: 5px;
+    }
+    .header-content h1 {
+        font-size: 1.5em; /* Adjust font size for small screens */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
