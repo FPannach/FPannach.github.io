@@ -52,7 +52,6 @@ header img {
     margin: 5px 0;     /* Reduce space between paragraphs */
     color: #333;
     text-align: center;
-    font-weight: bold;
 
 }
 
@@ -75,7 +74,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-size: 1.45em;
 }
@@ -244,16 +243,16 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
-        width: 90%;
         padding: 10px;
-    }
-    .header-content h1 {
-        font-size: 2em; /* Adjust font size for medium screens */
+        bottom: 10px;
+        right: 10px;
     }
 
+    .header-content h1 {
+        font-size: 2em;
+    }
 
     nav ul {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
