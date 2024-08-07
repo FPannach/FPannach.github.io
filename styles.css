@@ -32,11 +32,11 @@ header img {
 
 .header-content {
     position: absolute; /* Position relative to the header */
-    bottom: 20px;       /* Positioning from the bottom of the header */
-    right: 20px;        /* Positioning from the right of the header */
+    bottom: 45px;       /* Positioning from the bottom of the header */
+    right: 150px;        /* Positioning from the right of the header */
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;      /* Padding inside the box */
-    border-radius: 10px;
+    padding: 25px;      /* Padding inside the box */
+    border-radius: 25px;
 }
 
 .header-content h1 {
@@ -52,7 +52,7 @@ header img {
     margin: 5px 0;     /* Reduce space between paragraphs */
     color: #333;
     text-align: center;
-
+    font-weight: bold;
 }
 
 
@@ -82,21 +82,21 @@ nav ul li a {
 /* Showcase Styles */
 #showcase {
     min-height: 400px;
-    background: url('showcase.jpg') no-repeat center center/cover;
     text-align: center;
     color: #333; /* Dark grey text color */
 }
 
 #showcase h1 {
     margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 10px;
+    font-size: 40px;
     color: #333; /* Dark grey text color */
 }
 
 #showcase p {
     font-size: 20px;
+    text-align: center;
     color: #333; /* Dark grey text color */
+    margin: 0.5em;
 }
 
 /* Section Styles */
