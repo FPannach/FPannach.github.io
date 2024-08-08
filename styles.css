@@ -16,11 +16,12 @@ body {
 
 /* Header Styles */
 header {
+    font-family: Roboto, sans-serif;
     position: relative;
     background: #333;
     color: #fff;
     height: 100vh; /* Full height of the viewport */
-    border-bottom: #333 3px solid; /* Changed to dark grey */
+    border-bottom: #333 0.18em solid; /* Changed to dark grey */
 }
 
 header img {
@@ -32,16 +33,15 @@ header img {
 
 .header-content {
     position: absolute; /* Position relative to the header */
-    bottom: 45px;       /* Positioning from the bottom of the header */
-    right: 150px;        /* Positioning from the right of the header */
+    bottom: 3em;       /* Positioning from the bottom of the header */
+    right: 9em;        /* Positioning from the right of the header */
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px;      /* Padding inside the box */
-    border-radius: 25px;
+    padding: 1.5em;      /* Padding inside the box */
+    border-radius: 1.5em;
 }
 
 .header-content h1 {
     font-size: 2.25em;
-    margin-top: 9px;
     color: #333;
     text-align: center;
 
@@ -49,7 +49,7 @@ header img {
 
 .header-content p {
     font-size: 1.2em;
-    margin: 5px 0;     /* Reduce space between paragraphs */
+    margin: 0.3em 0;     /* Reduce space between paragraphs */
     color: #333;
     text-align: center;
     font-weight: bold;
@@ -58,8 +58,8 @@ header img {
 
 nav {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.25em;
+    right: 1.25em;
 }
 
 nav ul {
@@ -70,10 +70,12 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 1em;
 }
 
 nav ul li a {
+    font-family: 'Roboto', sans-serif; /* Ensure the correct font is used */
+    font-weight: 100; /* Thin font weight */
     color: #333333CF;
     text-decoration: none;
     font-size: 1.45em;
@@ -81,19 +83,18 @@ nav ul li a {
 
 /* Showcase Styles */
 #showcase {
-    min-height: 400px;
+    min-height: 15em;
     text-align: center;
     color: #333; /* Dark grey text color */
 }
 
 #showcase h1 {
-    margin-top: 100px;
-    font-size: 40px;
+    font-size: 2.5em;
     color: #333; /* Dark grey text color */
 }
 
 #showcase p {
-    font-size: 20px;
+    font-size: 1.25em;
     text-align: center;
     color: #333; /* Dark grey text color */
     margin: 0.5em;
@@ -101,48 +102,48 @@ nav ul li a {
 
 /* Section Styles */
 section {
-    padding: 20px 0;
-    border-bottom: #333 1px solid; /* Changed to dark grey */
+    padding: 1.25em 0;
+    border-bottom: #333 0.1em solid; /* Changed to dark grey */
 }
 
 .dark {
-    padding: 15px;
+    padding: 0.9em;
     background: #333;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 0.625em;
 }
 
 #boxes .box {
     float: left;
     width: 30%;
-    padding: 10px;
+    padding: 0.625em;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 #boxes .box img {
-    width: 90px;
+    width: 5.6em;
 }
 
 #boxes h3 {
-    margin: 10px 0;
+    margin: 0.625em 0;
 }
 
 article {
     float: left;
     width: 70%;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 aside {
     float: right;
     width: 30%;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 footer {
-    padding: 20px;
-    margin-top: 20px;
+    padding: 1.25em;
+    margin-top: 1.25em;
     color: #fff;
     background-color: #333;
     text-align: center;
@@ -156,13 +157,13 @@ footer {
 /* Arrow Icon Styles */
 #toggle-arrow {
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 0.625em;
     transition: transform 0.3s ease;
 }
 
 #toggle-arrow-pub {
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 0.625em;
     transition: transform 0.3s ease;
 }
 
@@ -173,19 +174,6 @@ footer {
 
 #toggle-arrow-pub.rotate {
     transform: rotate(180deg);
-}
-
-/* Language Dropdown Styles */
-.language-toggle {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-#language-select {
-    padding: 5px 10px;
-    font-size: 14px;
-    cursor: pointer;
 }
 
 /* Clearfix */
@@ -199,7 +187,7 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     header .header-content, header .header-content nav, header .header-content nav ul, header .header-content nav ul li {
         float: none;
         text-align: center;
@@ -207,7 +195,7 @@ footer {
     }
 
     #showcase h1 {
-        font-size: 40px;
+        font-size: 2.5em;
     }
 
     #boxes .box {
@@ -224,11 +212,11 @@ footer {
 .address-block {
     line-height: 1.0;
     color: #333;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 .address-block p {
-    margin: 5px 0;
+    margin: 0.3em 0;
 }
 
 .address-block a {
@@ -241,11 +229,11 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .header-content {
-        padding: 10px;
-        bottom: 10px;
-        right: 10px;
+        padding: 0.625em;
+        bottom: 0.625em;
+        right: 0.625em;
     }
 
     .header-content h1 {
@@ -258,12 +246,12 @@ footer {
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 0.625em 0;
     }
 
     .container {
         width: 100%;
-        padding: 10px;
+        padding: 0.625em;
     }
 
     .address-block {
@@ -271,16 +259,16 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 10em) {
     .header-content {
         width: 100%;
-        padding: 5px;
+        padding: 0.3em;
     }
     .header-content h1 {
         font-size: 1.5em; /* Adjust font size for small screens */
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 0.3em 0;
     }
 }
