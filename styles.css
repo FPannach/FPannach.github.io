@@ -8,6 +8,13 @@ body {
     color: #333;
 }
 
+.fix-div {
+    position: fixed ;
+    left: 50% ; 
+    
+
+}
+
 .container {
     width: 80%;
     margin: auto;
