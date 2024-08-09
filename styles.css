@@ -1,18 +1,39 @@
 /* General Styles */
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Roboto variant1, sans-serif;
     line-height: 1.6;
-    margin: 0;
+    margin: 1.5em;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
+
+body h2 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+body h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+
+}
+
+body ul {
+    list-style: circle outside;
+    font-size: 1.2em;
+
+}
+
+body p {
+    font-size: 1.2em;
+
+}
+
 .fix-div {
     position: fixed ;
     left: 50% ; 
-    
-
 }
 
 .container {
@@ -21,28 +42,11 @@ body {
     overflow: hidden;
 }
 
-/* Header Styles */
-header {
-    font-family: Roboto, sans-serif;
-    position: relative;
-    background: #333;
-    color: #fff;
-    height: 100vh; /* Full height of the viewport */
-    border-bottom: #333 0.18em solid; /* Changed to dark grey */
-}
-
-header img {
-    width: 100%;
-    height: 100%; /* Full height of the header */
-    object-fit: cover; /* Ensure the image covers the header area */
-    display: block;
-}
-
 .header-content {
     position: absolute; /* Position relative to the header */
     bottom: 3em;       /* Positioning from the bottom of the header */
     right: 9em;        /* Positioning from the right of the header */
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 1.5em;      /* Padding inside the box */
     border-radius: 1.5em;
 }
@@ -59,33 +63,57 @@ header img {
     margin: 0.3em 0;     /* Reduce space between paragraphs */
     color: #333;
     text-align: center;
-    font-weight: bold;
 }
 
+/* Header Styles */
+header {
+    font-family: Roboto variant1, sans-serif;
+    position: relative;
+    background: #333;
+    color: #fff;
+    height: 100vh; /* Full height of the viewport */
+    border-bottom: #333 0.18em solid; /* Changed to dark grey */
+}
 
-nav {
+header img {
+    width: 100%;
+    height: 100%; /* Full height of the header */
+    object-fit: cover; /* Ensure the image covers the header area */
+    display: block;
+}
+
+/*.nav-content 
+*/
+.nav-content {
+    font-family: Roboto variant1, sans-serif;
+    font-weight: 100; /* Thin font weight */
+    
+}
+.nav-content nav {
+    font-family: Roboto variant1, sans-serif;
+    font-weight: 100; /* Thin font weight */
+    
     position: absolute;
     top: 1.25em;
     right: 1.25em;
 }
 
-nav ul {
+.nav-content nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-nav ul li {
+ .nav-content nav ul li {
     margin: 0 1em;
 }
 
-nav ul li a {
-    font-family: 'Roboto', sans-serif; /* Ensure the correct font is used */
-    font-weight: 100; /* Thin font weight */
+ .nav-content nav ul li a {
     color: #333333CF;
     text-decoration: none;
     font-size: 1.45em;
+    font-family: inherit;
 }
 
 /* Showcase Styles */
@@ -97,12 +125,16 @@ nav ul li a {
 
 #showcase h1 {
     font-size: 2.5em;
-    color: #333; /* Dark grey text color */
+    color: #333; 
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+
 }
 
 #showcase p {
-    font-size: 1.25em;
-    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+    text-align: left;
     color: #333; /* Dark grey text color */
     margin: 0.5em;
 }
