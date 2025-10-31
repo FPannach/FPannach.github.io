@@ -20,7 +20,7 @@ export const projects: ResearchProject[] = [
     description:
       "Collaborative research project analyzing mythological narratives across cultures using computational methods to understand narrative patterns and cultural transmission.",
     tags: ["Comparative Mythology", "Cultural Analysis", "Narrative Modeling"],
-    status: "Ongoing",
+    status: "Completed",
     year: "2019-Present",
   },
   {
