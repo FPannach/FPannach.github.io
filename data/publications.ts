@@ -14,71 +14,7 @@ export interface Publication {
 }
 
 export const publications: Publication[] = [
-  // Theses
-  {
-    title: "Narrative Echoes across Time and Space: Comparative Analysis of Structural Similarities in Myth and Folktale Sequences",
-    venue: "University of Göttingen",
-    year: "2024",
-    type: "Thesis",
-    link: {
-      url: "http://dx.doi.org/10.53846/goediss-10349",
-      text: "Doctoral Thesis"
-    }
-  },
-  {
-    title: "An ontology-driven information system based on Vladimir Propp's morphology of the folktale for southern African folktales",
-    venue: "University of Göttingen",
-    year: "2019",
-    type: "Thesis",
-    link: {
-      url: "http://www.dbis.informatik.uni-goettingen.de/teaching/Theses/PDF/MSc-Pannach-Folktales-mrz-2019.pdf",
-      text: "MSc"
-    }
-  },
-  // Book Chapters
-  {
-    title: "To live and to lose: A regular grammar for the hylistic comparison of the narrative materials of Orpheus and Eurydice",
-    authors: ["Franziska Pannach"],
-    venue: "Mächte und Unterwelt in mesopotamischen und griechischen Quellen, Mythological Studies (MythoS), de Gruyter",
-    year: "2025",
-    type: "Book Chapter",
-    abstract: "Forthcoming book chapter on narrative comparison using regular grammar approaches."
-  },
-  {
-    title: "Humanities in a Digital World",
-    authors: ["Caroline Sporleder", "Franziska Pannach"],
-    venue: "The Edinburgh Companion to the New European Humanities, Edinburgh University Press",
-    year: "2024",
-    type: "Book Chapter",
-    link: {
-      url: "https://edinburghuniversitypress.com/book-the-edinburgh-companion-to-the-new-european-humanities.html",
-      text: "Open Access"
-    }
-  },
-  {
-    title: "Negotiating the possibilities digital humanities offers Media and Cultural Studies for crisis curriculum adjustments in the time of COVID-19",
-    authors: ["Anusharani Sewchurran", "Franziska Pannach"],
-    venue: "Alternation African Scholarship Book Series (AASBS)",
-    year: "2020",
-    type: "Book Chapter",
-    pages: "48-75",
-    link: {
-      url: "https://web.archive.org/web/20210206064343id_/http://alternation.ukzn.ac.za/Files/books/series/04/12-aasbs-04-full-text.pdf#page=69",
-      text: "Web Archive"
-    }
-  },
   // Journal Articles and Conference Papers
-  {
-    title: "The GOLEM Triple Store: A Graph-Based Representation of Narrative and Fiction",
-    authors: ["Franziska Pannach", "Xiaoyan Yang", "Noa Visser Solissa", "Ze Yu", "Andreas van Cranenburgh", "Michiel van der Ree", "Federico Pianzola"],
-    venue: "Proceedings of the Semantic Methods for Events and Stories (SEMMES) Workshop at ESWC",
-    year: "2024",
-    type: "Workshop",
-    link: {
-      url: "https://anr-kflow.github.io/semmes/papers2024/SEMMES_2024_paper_3.pdf",
-      text: "Open Access"
-    }
-  },
   {
     title: "Modelling and comparison of narrative domains with shallow ontologies",
     authors: ["Franziska Pannach", "Theresa Blaschke"],
@@ -88,6 +24,17 @@ export const publications: Publication[] = [
     pages: "274–280",
     link: {
       url: "https://aclanthology.org/2023.ldk-1.26/",
+      text: "Open Access"
+    }
+  },
+  {
+    title: "The GOLEM Triple Store: A Graph-Based Representation of Narrative and Fiction",
+    authors: ["Franziska Pannach", "Xiaoyan Yang", "Noa Visser Solissa", "Ze Yu", "Andreas van Cranenburgh", "Michiel van der Ree", "Federico Pianzola"],
+    venue: "Proceedings of the Semantic Methods for Events and Stories (SEMMES) Workshop at ESWC",
+    year: "2024",
+    type: "Workshop",
+    link: {
+      url: "https://anr-kflow.github.io/semmes/papers2024/SEMMES_2024_paper_3.pdf",
       text: "Open Access"
     }
   },
@@ -212,6 +159,59 @@ export const publications: Publication[] = [
     link: {
       url: "https://ceur-ws.org/Vol-2540/FAIR2019_paper_57.pdf",
       text: "Abstract"
+    }
+  },
+  // Theses
+  {
+    title: "Narrative Echoes across Time and Space: Comparative Analysis of Structural Similarities in Myth and Folktale Sequences",
+    venue: "University of Göttingen",
+    year: "2024",
+    type: "Thesis",
+    link: {
+      url: "http://dx.doi.org/10.53846/goediss-10349",
+      text: "Doctoral Thesis"
+    }
+  },
+  {
+    title: "An ontology-driven information system based on Vladimir Propp's morphology of the folktale for southern African folktales",
+    venue: "University of Göttingen",
+    year: "2019",
+    type: "Thesis",
+    link: {
+      url: "http://www.dbis.informatik.uni-goettingen.de/teaching/Theses/PDF/MSc-Pannach-Folktales-mrz-2019.pdf",
+      text: "MSc"
+    }
+  },
+  // Book Chapters
+  {
+    title: "To live and to lose: A regular grammar for the hylistic comparison of the narrative materials of Orpheus and Eurydice",
+    authors: ["Franziska Pannach"],
+    venue: "Mächte und Unterwelt in mesopotamischen und griechischen Quellen, Mythological Studies (MythoS), de Gruyter",
+    year: "2025",
+    type: "Book Chapter",
+    abstract: "Forthcoming book chapter on narrative comparison using regular grammar approaches."
+  },
+  {
+    title: "Humanities in a Digital World",
+    authors: ["Caroline Sporleder", "Franziska Pannach"],
+    venue: "The Edinburgh Companion to the New European Humanities, Edinburgh University Press",
+    year: "2024",
+    type: "Book Chapter",
+    link: {
+      url: "https://edinburghuniversitypress.com/book-the-edinburgh-companion-to-the-new-european-humanities.html",
+      text: "Open Access"
+    }
+  },
+  {
+    title: "Negotiating the possibilities digital humanities offers Media and Cultural Studies for crisis curriculum adjustments in the time of COVID-19",
+    authors: ["Anusharani Sewchurran", "Franziska Pannach"],
+    venue: "Alternation African Scholarship Book Series (AASBS)",
+    year: "2020",
+    type: "Book Chapter",
+    pages: "48-75",
+    link: {
+      url: "https://web.archive.org/web/20210206064343id_/http://alternation.ukzn.ac.za/Files/books/series/04/12-aasbs-04-full-text.pdf#page=69",
+      text: "Web Archive"
     }
   }
 ]
