@@ -30,7 +30,7 @@ export const teachingContent = {
 
 export const academicYears: AcademicYear[] = [
   {
-    year: "Academic Year 2024/25",
+    year: "Academic Year 2025/26",
     courses: [
       {
         period: "Periode 1a",
@@ -44,12 +44,6 @@ export const academicYears: AcademicYear[] = [
         level: "BSc"
       },
       {
-        period: "Periode 1b",
-        title: "Digital Humanities: Tools and Methods",
-        level: "MSc",
-        role: "Course Coordination"
-      },
-      {
         period: "Periode 2a",
         title: "Analysing Data",
         level: "MSc"
@@ -59,12 +53,6 @@ export const academicYears: AcademicYear[] = [
         title: "Web Technology",
         level: "BSc",
         collaborators: ["F. Tsiwah PhD"]
-      },
-      {
-        period: "Periode 2a",
-        title: "Digital Humanities: Thesis Lab",
-        level: "MSc",
-        collaborators: ["Prof. S. Aasman"]
       }
     ]
   }
@@ -78,11 +66,6 @@ export const supervisionCategories: SupervisionCategory[] = [
         name: "Pritha Majumdar",
         topic: "Computational Analysis of Similes in Fiction",
         institution: "RUG"
-      },
-      {
-        name: "Kristina Schneider",
-        topic: "Co-tutelle RUG and University of Mainz",
-        institution: "Germany"
       }
     ]
   },
@@ -90,10 +73,38 @@ export const supervisionCategories: SupervisionCategory[] = [
     title: "Master's Theses",
     students: [
       {
-        name: "Tarjia Alam Nisha",
-        topic: "Navigating the Past: Corpus Preparation and Annotation Guidelines for Identifying Valid Itineraries in Historical Travelogues",
-        program: "MSc Applied Computer Science",
-        institution: "University of Göttingen"
+        name: "Stephan Sportel, Tijn Donners",
+        topic: "Annotating Entities and Itineraries in Historical Dutch Travelogues",
+        program: "MSc Digital Humanities",
+        institution: "RUG"
+      },
+      }
+        name: "Marinka Vette",
+        topic: "Similes in Translation",
+        program: "MSc Digital Humanities",
+        institution: "RUG"
+      },
+      }
+        name: "Koen Snelten",
+        topic: "Prototyping the Academic Travel Online Research Interface",
+        program: "MSc Information Science",
+        institution: "RUG"
+      },
+      }
+        name: "Felipe Bengoa Trucco",
+        topic: "From the Global South to Europe and back. Reconstructing a life and social relationships from Epistolary Network Analysis: Luis Mitrovic Balbontín Archive",
+        program: "MSc Digital Humanities",
+        institution: "RUG"
+      },
+      	name: "Felipe Bengoa Trucco",
+        topic: "From the Global South to Europe and back. Reconstructing a life and social relationships from Epistolary Network Analysis: Luis Mitrovic Balbontín Archive",
+        program: "MSc Digital Humanities",
+        institution: "RUG"
+      },
+        name: "Maxim van der Maesen de Sombreff",
+        topic: "Detecting Gender-based Violence in Online Fiction",
+        program: "MSc Information Science",
+        institution: "RUG"
       }
     ]
   },
@@ -124,6 +135,12 @@ export const supervisionCategories: SupervisionCategory[] = [
         name: "Theresa Blaschke",
         topic: "MSc Digital Humanities, Project Internship at University of Göttingen, Germany",
         institution: "University of Marburg, Germany"
+      },
+      {
+        name: "Tarjia Alam Nisha",
+        topic: "Navigating the Past: Corpus Preparation and Annotation Guidelines for Identifying Valid Itineraries in Historical Travelogues",
+        program: "MSc Applied Computer Science",
+        institution: "University of Göttingen"
       }
     ]
   }

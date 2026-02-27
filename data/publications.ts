@@ -40,7 +40,7 @@ export const publications: Publication[] = [
     title: "To live and to lose: A regular grammar for the hylistic comparison of the narrative materials of Orpheus and Eurydice",
     authors: ["Franziska Pannach"],
     venue: "Mächte und Unterwelt in mesopotamischen und griechischen Quellen, Mythological Studies (MythoS), de Gruyter",
-    year: "2025",
+    year: "2026",
     type: "Book Chapter",
     abstract: "Forthcoming book chapter on narrative comparison using regular grammar approaches."
   },
@@ -75,7 +75,7 @@ export const publications: Publication[] = [
     year: "2024",
     type: "Workshop",
     link: {
-      url: "https://anr-kflow.github.io/semmes/papers2024/SEMMES_2024_paper_3.pdf",
+      url: "https://ceur-ws.org/Vol-3749/SEMMES_2024_paper_3.pdf",
       text: "Open Access"
     }
   },
@@ -178,6 +178,19 @@ export const publications: Publication[] = [
       url: "https://aclanthology.org/2021.bucc-1.5/",
       text: "Open Access"
     }
+    
+{
+	  title: "Decoding Southern African Folktales using Hylistic Analysis",
+	  authors: ["Franziska Pannach"],
+	  venue: "Journal of the Digital Humanities Association of Southern Africa (DHASA)",
+	  year: "2025",
+	  type: "Journal Article",
+	  link: {
+	    url: "https://doi.org/10.55492/dhasa.v5i02.5381",
+	    text: "DOI"
+  }
+}
+    
   },
   {
     title: "Judgments of effort exerted by others are influenced by received rewards",
@@ -213,7 +226,30 @@ export const publications: Publication[] = [
       url: "https://ceur-ws.org/Vol-2540/FAIR2019_paper_57.pdf",
       text: "Abstract"
     }
-  }
+  },
+  {
+	title: "The GOLEM Ontology for Narrative and Fiction",
+	authors: ["Federico Pianzola", "Luotong Cheng", "Franziska Pannach", "Xiaoyan Yang", "Luca Scotti"],
+	venue: "Humanities, Volume 14, Issue 10",
+	year: "2025",
+	type: "Journal",
+	link: {
+		url: "https://www.mdpi.com/2076-0787/14/10/193",
+		text: "Open Access"
+  },
+{
+  title: "Grounding the Development of an Ontology for Narrative and Fiction",
+  authors: ["Luca Scotti", "Federico Pianzola", "Franziska Pannach"],
+  venue: "Semantic Web – Interoperability, Usability, Applicability",
+  year: "2025",
+  type: "Journal"
+}
+}
+
+}
+
+  
+  
 ]
 export const publicationsContent = {
   title: "Publications",

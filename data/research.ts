@@ -20,14 +20,14 @@ export const projects: ResearchProject[] = [
     description:
       "Collaborative research project analyzing mythological narratives across cultures using computational methods to understand narrative patterns and cultural transmission.",
     tags: ["Comparative Mythology", "Cultural Analysis", "Narrative Modeling"],
-    status: "Ongoing",
-    year: "2019-Present",
+    status: "Completed",
+    year: "2019-2024",
   },
   {
     title: "Narrative Echoes across Time and Space",
     description:
       "Doctoral research exploring computational approaches to identifying and analyzing recurring narrative patterns in mythological and folkloric texts across different cultures.",
-    tags: ["NLP", "Computational Folkloristics", "Cross-cultural Analysis"],
+    tags: ["NLP", "Computational Folkloristics", "Computational Mythological Studies", "Cross-cultural Analysis"],
     status: "Completed",
     year: "2019-2023",
   },
