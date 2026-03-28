@@ -3,7 +3,7 @@ export interface Publication {
   authors?: string[]
   venue: string
   year: string
-  type: 'Journal' | 'Conference' | 'Book Chapter' | 'Book' | 'Thesis' | 'Workshop'
+  type: 'Journal Article' | 'Conference' | 'Book Chapter' | 'Book' | 'Thesis' | 'Workshop'
   pages?: string
   doi?: string
   link?: {
@@ -108,7 +108,7 @@ export const publications: Publication[] = [
     authors: ["Senja Post", "Nils Bienzeisler", "Franziska Pannach"],
     venue: "New Media & Society",
     year: "2023",
-    type: "Journal",
+    type: "Journal Article",
     link: {
       url: "https://doi.org/10.1177/14614448231185764",
       text: "Open Access"
@@ -119,7 +119,7 @@ export const publications: Publication[] = [
     authors: ["Franziska Pannach", "Caroline Sporleder", "Wolfgang May", "Aravind Krishnan", "Anusharani Sewchurran"],
     venue: "Semantic Web",
     year: "2021",
-    type: "Journal",
+    type: "Journal Article",
     pages: "12(2): 219–239"
   },
   {
@@ -178,26 +178,24 @@ export const publications: Publication[] = [
       url: "https://aclanthology.org/2021.bucc-1.5/",
       text: "Open Access"
     }
-    
-{
-	  title: "Decoding Southern African Folktales using Hylistic Analysis",
-	  authors: ["Franziska Pannach"],
-	  venue: "Journal of the Digital Humanities Association of Southern Africa (DHASA)",
-	  year: "2025",
-	  type: "Journal Article",
-	  link: {
-	    url: "https://doi.org/10.55492/dhasa.v5i02.5381",
-	    text: "DOI"
-  }
-}
-    
+  },
+  {
+    title: "Decoding Southern African Folktales using Hylistic Analysis",
+    authors: ["Franziska Pannach"],
+    venue: "Journal of the Digital Humanities Association of Southern Africa (DHASA)",
+    year: "2025",
+    type: "Journal Article",
+    link: {
+      url: "https://doi.org/10.55492/dhasa.v5i02.5381",
+      text: "DOI"
+    }
   },
   {
     title: "Judgments of effort exerted by others are influenced by received rewards",
     authors: ["Max Rollwage", "Franziska Pannach", "Caedyn Stinson", "Ulf Toelch", "Igor Kagan", "Arezoo Pooresmaeili"],
     venue: "Scientific Reports",
     year: "2020",
-    type: "Journal",
+    type: "Journal Article",
     pages: "10, 1868",
     link: {
       url: "https://doi.org/10.1038/s41598-020-58686-0",
@@ -232,21 +230,19 @@ export const publications: Publication[] = [
 	authors: ["Federico Pianzola", "Luotong Cheng", "Franziska Pannach", "Xiaoyan Yang", "Luca Scotti"],
 	venue: "Humanities, Volume 14, Issue 10",
 	year: "2025",
-	type: "Journal",
-	link: {
-		url: "https://www.mdpi.com/2076-0787/14/10/193",
-		text: "Open Access"
+	type: "Journal Article",
+    link: {
+      url: "https://www.mdpi.com/2076-0787/14/10/193",
+      text: "Open Access"
+    }
   },
-{
-  title: "Grounding the Development of an Ontology for Narrative and Fiction",
-  authors: ["Luca Scotti", "Federico Pianzola", "Franziska Pannach"],
-  venue: "Semantic Web – Interoperability, Usability, Applicability",
-  year: "2025",
-  type: "Journal"
-}
-}
-
-}
+  {
+    title: "Grounding the Development of an Ontology for Narrative and Fiction",
+    authors: ["Luca Scotti", "Federico Pianzola", "Franziska Pannach"],
+    venue: "Semantic Web – Interoperability, Usability, Applicability",
+    year: "2025",
+    type: "Journal"
+  },
 
   
   

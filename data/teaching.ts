@@ -78,29 +78,25 @@ export const supervisionCategories: SupervisionCategory[] = [
         program: "MSc Digital Humanities",
         institution: "RUG"
       },
-      }
+      {
         name: "Marinka Vette",
         topic: "Similes in Translation",
         program: "MSc Digital Humanities",
         institution: "RUG"
       },
-      }
+      {
         name: "Koen Snelten",
         topic: "Prototyping the Academic Travel Online Research Interface",
         program: "MSc Information Science",
         institution: "RUG"
       },
-      }
+      {
         name: "Felipe Bengoa Trucco",
         topic: "From the Global South to Europe and back. Reconstructing a life and social relationships from Epistolary Network Analysis: Luis Mitrovic Balbontín Archive",
         program: "MSc Digital Humanities",
         institution: "RUG"
       },
-      	name: "Felipe Bengoa Trucco",
-        topic: "From the Global South to Europe and back. Reconstructing a life and social relationships from Epistolary Network Analysis: Luis Mitrovic Balbontín Archive",
-        program: "MSc Digital Humanities",
-        institution: "RUG"
-      },
+      {
         name: "Maxim van der Maesen de Sombreff",
         topic: "Detecting Gender-based Violence in Online Fiction",
         program: "MSc Information Science",
