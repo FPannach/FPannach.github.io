@@ -50,7 +50,7 @@ export function ResearchSection() {
               {projects.map((project, index) => (
                 <Card
                   key={index}
-                  className={`bg-card border-border hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 ${
+                  className={`border-border hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 ${
                     isVisible ? "animate-slide-up" : ""
                   }`}
                   style={{ animationDelay: `${index * 200}ms` }}

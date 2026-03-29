@@ -45,7 +45,7 @@ export function ContactSection() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-card border-border">
+              <Card className="border-border">
                 <CardHeader>
                   <CardTitle className="text-2xl text-foreground">Contact Information</CardTitle>
                 </CardHeader>
@@ -105,7 +105,7 @@ export function ContactSection() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-card border-border">
+              <Card className="border-border">
                 <CardHeader>
                   <CardTitle className="text-2xl text-foreground">{collaborationInfo.title}</CardTitle>
                 </CardHeader>

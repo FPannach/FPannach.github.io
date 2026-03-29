@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink } from "lucide-react"
-import { publications, publicationsContent, publicationCategories } from '@/data/publications'
+import { publications, publicationsContent, publicationCategories, publicationTypeOrder } from '@/data/publications'
 
 export function PublicationsSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -13,9 +13,15 @@ export function PublicationsSection() {
   const [showAbstract, setShowAbstract] = useState<{ [key: number]: boolean }>({})
   const sectionRef = useRef<HTMLElement>(null)
 
-  const publicationTypes = ['All', ...Object.keys(publicationCategories).filter(type => publicationCategories[type as keyof typeof publicationCategories].length > 0)]
+  const publicationTypes = ['All', ...publicationTypeOrder.filter(type => publicationCategories[type]?.length > 0)]
 
-  const filteredPublications = selectedType === 'All' ? publications : publications.filter(p => p.type === selectedType)
+  const filteredPublications = (selectedType === 'All' ? publications : publications.filter(p => p.type === selectedType))
+    .slice()
+    .sort((a, b) => {
+      const typeOrder = publicationTypeOrder.indexOf(a.type) - publicationTypeOrder.indexOf(b.type)
+      if (typeOrder !== 0) return typeOrder
+      return parseInt(b.year) - parseInt(a.year)
+    })
 
   const toggleAbstract = (index: number) => {
     setShowAbstract(prev => ({ ...prev, [index]: !prev[index] }))
@@ -40,7 +46,7 @@ export function PublicationsSection() {
 
 
   return (
-    <section id="publications" ref={sectionRef} className="py-24 bg-card/30">
+    <section id="publications" ref={sectionRef} className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div
@@ -63,7 +69,7 @@ export function PublicationsSection() {
                     variant={selectedType === type ? "default" : "outline"}
                     size="sm"
                     onClick={() => setSelectedType(type)}
-                    className="text-xs"
+                    className={`text-xs cursor-pointer ${selectedType !== type ? "hover:bg-primary/10 hover:text-primary hover:border-primary" : ""}`}
                   >
                     {type} {type !== 'All' && `(${publicationCategories[type as keyof typeof publicationCategories]?.length || 0})`}
                   </Button>
@@ -80,7 +86,7 @@ export function PublicationsSection() {
               {filteredPublications.map((pub, index) => (
                 <div
                   key={index}
-                  className={`bg-card border border-border rounded-lg p-4 hover:border-primary/30 transition-all duration-300 hover:shadow-md hover:shadow-primary/5 ${
+                  className={`bg-card border border-border rounded-lg p-4 shadow-sm hover:border-primary/30 transition-all duration-300 hover:shadow-md hover:shadow-primary/5 ${
                     isVisible ? "animate-slide-up" : ""
                   }`}
                   style={{ animationDelay: `${index * 50}ms` }}
@@ -92,7 +98,7 @@ export function PublicationsSection() {
                           {pub.type}
                         </Badge>
                         <div className="flex-1 min-w-0">
-                          <h3 className="font-medium text-foreground leading-tight mb-1 hover:text-primary cursor-pointer transition-colors">
+                          <h3 className="font-medium text-foreground leading-tight mb-1">
                             {pub.title}
                           </h3>
                           <div className="text-sm text-muted-foreground space-y-1">
@@ -133,7 +139,7 @@ export function PublicationsSection() {
                           <Button
                             variant="outline"
                             size="sm"
-                            className="text-xs border-primary/20 hover:border-primary hover:bg-primary/10 bg-transparent h-7"
+                            className="text-xs border-foreground/15 hover:border-primary hover:bg-primary/10 bg-background shadow-sm h-7"
                             onClick={() => window.open(pub.link?.url, '_blank')}
                           >
                             <ExternalLink className="w-3 h-3 mr-1" />

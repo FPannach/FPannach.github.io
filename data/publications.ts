@@ -1,9 +1,13 @@
+export const publicationTypeOrder = ['Journal Article', 'Conference', 'Workshop', 'Book Chapter', 'Thesis'] as const
+
+export type PublicationType = typeof publicationTypeOrder[number]
+
 export interface Publication {
   title: string
   authors?: string[]
   venue: string
   year: string
-  type: 'Journal Article' | 'Conference' | 'Book Chapter' | 'Book' | 'Thesis' | 'Workshop'
+  type: PublicationType
   pages?: string
   doi?: string
   link?: {
@@ -32,7 +36,7 @@ export const publications: Publication[] = [
     type: "Thesis",
     link: {
       url: "http://www.dbis.informatik.uni-goettingen.de/teaching/Theses/PDF/MSc-Pannach-Folktales-mrz-2019.pdf",
-      text: "MSc"
+      text: "MSc Thesis"
     }
   },
   // Book Chapters
@@ -187,7 +191,7 @@ export const publications: Publication[] = [
     type: "Journal Article",
     link: {
       url: "https://doi.org/10.55492/dhasa.v5i02.5381",
-      text: "DOI"
+      text: "Open Access"
     }
   },
   {
@@ -226,11 +230,11 @@ export const publications: Publication[] = [
     }
   },
   {
-	title: "The GOLEM Ontology for Narrative and Fiction",
-	authors: ["Federico Pianzola", "Luotong Cheng", "Franziska Pannach", "Xiaoyan Yang", "Luca Scotti"],
-	venue: "Humanities, Volume 14, Issue 10",
-	year: "2025",
-	type: "Journal Article",
+    title: "The GOLEM Ontology for Narrative and Fiction",
+    authors: ["Federico Pianzola", "Luotong Cheng", "Franziska Pannach", "Xiaoyan Yang", "Luca Scotti"],
+    venue: "Humanities, Volume 14, Issue 10",
+    year: "2025",
+    type: "Journal Article",
     link: {
       url: "https://www.mdpi.com/2076-0787/14/10/193",
       text: "Open Access"
@@ -241,11 +245,11 @@ export const publications: Publication[] = [
     authors: ["Luca Scotti", "Federico Pianzola", "Franziska Pannach"],
     venue: "Semantic Web – Interoperability, Usability, Applicability",
     year: "2025",
-    type: "Journal"
+    type: "Journal Article"
   },
 
-  
-  
+
+
 ]
 export const publicationsContent = {
   title: "Publications",

@@ -5,7 +5,7 @@ import { experiences } from '@/data/cv'
 export function CVSection() {
 
   return (
-    <section id="cv" className="py-24 bg-card/30">
+    <section id="cv" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="mb-16">
